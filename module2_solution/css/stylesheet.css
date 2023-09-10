@@ -1,0 +1,79 @@
+/* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header {
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section styles */
+/*Default section style*/
+.section {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    float: left;
+    width: 30%;
+    background-color:#9E9E9E ;
+}
+
+.section-title-1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ff0000; 
+    color: #ffffffff; 
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.section-title-2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #0055FF;
+    color: #ffffffff;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.section-title-3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #00A00F;
+    color: #ffffffff;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+/* Responsive layout for tablet view */
+@media screen and (max-width: 991px) {
+    .section {
+        width: 45%;
+    }
+    .section:nth-child(4){
+    	width: 100%;
+    	clear: both;
+    }
+
+/* Responsive layout for mobile view */
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        clear: both;
+    }
+}
+
+
+/* Clear floats to prevent layout issues */
+.clear {
+    clear: both;
+}
